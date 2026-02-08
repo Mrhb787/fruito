@@ -10,6 +10,9 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  server: {
+    allowedHosts: ['dotlike-hueless-ila.ngrok-free.dev'],
+  },
   test: {
     globals: true,
     environment: 'jsdom',
